@@ -46,3 +46,76 @@
         list-style: none;
         padding: 0;
       }
+      .controls ul li {
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+      }
+
+      .controls ul li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" title="Home">
+            <img src="images/wall-e-unscreen.gif" alt="Logo CyberCore" />
+          </a>
+          <p>CyberCore</p>
+        </div>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
+          <li><a href="historia.html" title="História">História</a></li>
+          <li>
+            <a href="jogueagora.html" title="Jogue Agora" class="efeito"
+              >Jogue Agora</a
+            >
+          </li>
+          <li>
+            <a href="contato.html" title="Contato" class="btn">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-container">
+        <h2>Jogue Agora!</h2>
+        <iframe
+          class="game-frame"
+          src="https://example.com/jogo"
+          title="CyberCore Game"
+        ></iframe>
+      </section>
+
+      <section class="controls">
+        <h2>Controles do Jogo</h2>
+        <ul>
+          <li><strong>W / ↑ :</strong> Mover para cima</li>
+          <li><strong>A / ← :</strong> Mover para esquerda</li>
+          <li><strong>S / ↓ :</strong> Mover para baixo</li>
+          <li><strong>D / → :</strong> Mover para direita</li>
+          <li><strong>Espaço:</strong> Atacar</li>
+          <li><strong>Shift:</strong> Correr</li>
+          <li><strong>Esc:</strong> Pausar o jogo</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
