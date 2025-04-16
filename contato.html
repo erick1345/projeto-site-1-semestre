@@ -55,3 +55,89 @@
       input[type="submit"]:hover {
         background-color: #e64a19;
       }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" title="Home">
+            <img src="images/wall-e-unscreen.gif" alt="Logo CyberCore" />
+          </a>
+          <p>CyberCore</p>
+        </div>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="index.html#gallery" title="Galeria">Galeria</a></li>
+          <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
+          <li><a href="historia.html" title="História">História</a></li>
+          <li>
+            <a href="contato.html" title="Contato" class="efeito">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+          <label for="Telefone">Telefone:</label>
+          <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            placeholder="Digite seu numero"
+            required
+          />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer footer-contato">
+      <div class="footer-container">
+        <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.x.com"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault(); 
+        alert("Mensagem enviada com sucesso!"); 
+        this.submit(); 
+      });
+    </script>
+  </body>
+</html>
