@@ -84,3 +84,71 @@
           mostrar suas habilidades. Desperte o guerreiro cibernético que há em
           você e mergulhe em uma aventura épica!
         </p>
+    </section>
+    <section id="gallery">
+      <h2>Galeria</h2>
+
+    </div>
+    <div class="coluna">
+      <!-- Carrossel substituindo a imagem -->
+      <div class="carousel">
+        <div class="slides" id="slides">
+          <div class="slide">
+            <img src="images/erick.jpg" alt="Imagem 1" />
+          </div>
+          <div class="slide">
+            <img src="images/teste.jpg" alt="Imagem 2" />
+          </div>
+          <div class="slide">
+            <img src="images/robo boss.gif" alt="Imagem 3" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-car" onclick="prevSlide()">⟨</button>
+          <button class="btn-car" onclick="nextSlide()">⟩</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="botao-centralizado">
+  <a href="jogueagora.html" class="btn-cyber">Jogue Agora</a>
+</div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+slides.forEach((slide, i) => {
+slide.style.display = i === index ? 'block' : 'none';
+});
+}
+
+function prevSlide() {
+currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+showSlide(currentSlide);
+}
+
+function nextSlide() {
+currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+</script>
