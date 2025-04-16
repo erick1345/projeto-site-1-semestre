@@ -63,3 +63,157 @@
       }
     }
   }
+  body {
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: color #333;
+    color: #fff;
+    padding: 30px 0;
+    p {
+      margin: 30px;
+    }
+    a {
+      color: #ccc;
+      font-size: 1.5em;
+      margin: 20px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+  
+  main {
+    width: 1000px;
+    margin: auto;
+  
+    .tabela {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+  
+      .coluna {
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+  
+      .btn {
+        background-color: orange;
+        color: #0e1729;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+  
+      .btn:hover {
+        background-color: rgb(193, 130, 13);
+      }
+  
+      p,
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1px;
+      }
+  
+      p {
+        font-size: 40px;
+      }
+  
+      h1 {
+        font-size: 50px;
+        transition: 1.2s all;
+      }
+    }
+  
+    h1:hover {
+      color: rgba(255, 0, 0, 0.83);
+      font-size: 65px;
+    }
+  
+    #sobre {
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px;
+      }
+  
+      .image {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 25px white;
+      }
+  
+      p {
+        margin: 30px;
+        line-height: 2em;
+        text-indent: 50px;
+      }
+    }
+  
+  
+    #planos {
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px;
+      }
+  
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+  
+        .col {
+          box-shadow: 0 0 25px white;
+          margin: 10px;
+          border-radius: 10px;
+          padding: 20px;
+          text-align: center;
+        }
+  
+        h3 {
+          text-transform: uppercase;
+          color: orange;
+          font-size: 16px;
+        }
+  
+        hr {
+          margin: 20px 0;
+          border: 1px dashed #ccc;
+        }
+  
+        .valor {
+          color: red;
+          font-size: 20px;
+  
+          strong {
+            font-size: 30px;
+          }
+        }
+  
+        ul li {
+          text-align: left;
+        }
+      }
+  
+      .plano {
+        background-color: rgb(92, 179, 237);
+        color: #0e1729;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      .plano:hover {
+        background-color: rgb(0, 30, 255);
+      }
+    }
+  }
+  
