@@ -217,3 +217,84 @@
     }
   }
   
+  .efeito {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .efeito:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 50%;
+    background: rgb(255, 0, 0);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s linear;
+  }
+  
+  .efeito:hover:before {
+    transform: scaleX(2);
+  }
+  
+  
+  .team-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 25%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 25px white;
+    }	
+  }
+  /*.image {
+      animation: mexendo 1s linear 15s infinite both alternate;
+  }
+  
+  @keyframes mexendo {
+      0% {
+          transform: skew(0deg);
+      }
+  
+      100% {
+          transform: skew(30deg, 20deg);
+      }
+  }*/
+  
+  body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .tabela {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #f1f1f1;
+  }
