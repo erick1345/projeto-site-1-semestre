@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-html,
-body {
-=======
 html, body {
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
@@ -15,23 +10,12 @@ body {
 	color: white;
 }
 
-<<<<<<< HEAD
-html,
-body,
-canvas {
-=======
 html, body, canvas {
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 	touch-action-delay: none;
 	touch-action: none;
 }
 
-<<<<<<< HEAD
-canvas,
-.c3htmlwrap {
-=======
 canvas, .c3htmlwrap {
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 	position: absolute;
 }
 
@@ -43,11 +27,7 @@ canvas, .c3htmlwrap {
 	pointer-events: none;
 }
 
-<<<<<<< HEAD
-.c3htmlwrap[interactive]>* {
-=======
 .c3htmlwrap[interactive] > * {
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 	pointer-events: auto;
 }
 
@@ -58,11 +38,7 @@ html[ioswebview] canvas {
 	user-select: none;
 }
 
-<<<<<<< HEAD
-html[ioswebview] .c3htmlwrap>* {
-=======
 html[ioswebview] .c3htmlwrap > * {
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 	-webkit-user-select: auto;
 	user-select: auto;
 }
@@ -129,13 +105,7 @@ html[ioswebview] .c3htmlwrap > * {
 .c3-screen-reader-text {
 	position: absolute;
 	width: 1px;
-<<<<<<< HEAD
-	height: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-=======
     height: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
->>>>>>> ffd737d86a2dca43f2fbcd74ba14eea95c73db3a
 }
