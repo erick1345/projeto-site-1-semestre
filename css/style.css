@@ -436,7 +436,10 @@ body {
   .hamburger {
     display: block;
   }
-
+  .footer-contato {
+    position: relative;
+    width: 100%;
+  }
   .menu {
     display: none;
     flex-direction: column;
