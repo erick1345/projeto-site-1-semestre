@@ -413,9 +413,11 @@
   
     .controls {
       width: 95%;
+      
     }
     .controls ul li {
         font-size: 16px;
+       
       }
 
       .team-member {
