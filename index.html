@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,30 +11,7 @@
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<meta charset="UTF-8">
-<title>Wild West The Infinite Battle</title>
-<meta name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
-<meta name="generator" content="Scirra Construct">
-
-
-
-
-<link rel="manifest" href="appmanifest.json">
-<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
-<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
-<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
-<link rel="icon" type="image/png" href="icons/icon-512.png">
-
-<link rel="stylesheet" href="style.css">
-
-
-
-</head>
-
 <body>
-
   <header>
     <nav>
       <div>
@@ -43,27 +20,16 @@
         </a>
         <p>CyberCore</p>
       </div>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
       <nav class="menu">
-        <ul>
-          <li><a href="index.html" title="Home">Home</a></li>
-          <li><a href="#gallery" title="Galeria">Galeria</a></li>
-          <li><a href="quemSomos.html" title="Quem sou?">Quem sou?</a></li>
-          <li><a href="historia.html" title="História">História</a></li>
-          <li>
-            <a href="jogueagora.html" title="Jogue Agora" class="efeito">Jogue Agora</a>
-          </li>
-          <li>
-            <a href="contato.html" title="Contato" class="btn">Contato</a>
-          </li>
-        </ul>
-        <script>
-
-          function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.classList.toggle('active');
-          }
-        </script>
+       <ul>
+         <li><a href="index.html" title="Home">Home</a></li>
+         <li><a href="#gallery" title="Galeria">Galeria</a></li>
+         <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
+         <li><a href="historia.html" title="História">História</a></li>
+         <li>
+           <a href="contato.html" title="Contato" class="btn">Contato</a>
+         </li>
+       </ul>
       </nav>
     </nav>
   </header>
@@ -78,7 +44,7 @@
           </p>
         </div>
         <div class="coluna">
-          <!-- <img src="images/wall-e-unscreen.gif" alt="Warrior" /> -->
+          <img src="images/wall-e-unscreen.gif" alt="Warrior" />
         </div>
       </div>
     </section>
@@ -88,11 +54,11 @@
       <h2>Personagens</h2>
       <div class="grid-3">
         <div class="col">
-          <h3>Overlord XZ-9</h3>
+          <h3>Boss</h3>
           <img src="images/robo boss.gif" alt="Boss" />
         </div>
         <div class="col">
-          <h3> R-01</h3>
+          <h3>Intermediário</h3>
           <img src="images/Idle (1).png" alt="Boss" />
         </div>
         <div class="col">
@@ -128,10 +94,10 @@
           <div class="carousel">
             <div class="slides" id="slides">
               <div class="slide">
-                <img src="images/" alt="Imagem 1" />
+                <img src="images/erick.jpg" alt="Imagem 1" />
               </div>
               <div class="slide">
-                <img src="images/jogo1.png" alt="Imagem 2" />
+                <img src="images/teste.jpg" alt="Imagem 2" />
               </div>
               <div class="slide">
                 <img src="images/robo boss.gif" alt="Imagem 3" />
@@ -143,49 +109,47 @@
             </div>
           </div>
         </div>
-
         </div>
-        <script>
-          if (location.protocol.substr(0, 4) === "file") {
-            alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
-          }
-        </script>
-
-        <noscript>
-          <div id="notSupportedWrap">
-            <h2 id="notSupportedTitle">This content requires JavaScript</h2>
-            <p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
-          </div>
-        </noscript>
       </section>
 
       <div class="botao-centralizado">
         <a href="jogueagora.html" class="btn-cyber">Jogue Agora</a>
       </div>
-
+    </section>
   </main>
   <footer class="footer">
     <div class="footer-container">
       <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
       <div class="social-icons">
-        <a href="https://www.facebook.com/erick.cordeirojala.9"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/999floco._/"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/ErickcJala"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   </footer>
 </body>
 
 </html>
+
 <script>
-  if (location.protocol.substr(0, 4) === "file") {
-    alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
   }
+
+  function prevSlide() {
+    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+    showSlide(currentSlide);
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
 </script>
-
-
-
-
-</body>
-
-</html>
