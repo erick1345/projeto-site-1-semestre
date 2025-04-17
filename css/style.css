@@ -448,10 +448,6 @@ body {
     z-index: 1000;
   }
 
-  .menu.active {
-    display: flex;
-  }
-
   .menu ul {
     width: 100%;
     text-align: center;
@@ -465,7 +461,9 @@ body {
 }
 
 
-
+.menu.active {
+  display: flex;
+}
 
 
 
