@@ -57,6 +57,7 @@
           </a>
           <p>CyberCore</p>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <nav class="menu">
         <ul>
           <li><a href="index.html" title="Home">Home</a></li>
@@ -76,6 +77,13 @@
             <a href="contato.html" title="Contato" class="btn">Contato</a>
           </li>
         </ul>
+        <script>
+       
+          function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+          }
+          </script>
         </nav>
       </nav>
     </header>
