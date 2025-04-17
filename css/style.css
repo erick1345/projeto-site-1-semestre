@@ -362,21 +362,14 @@ body {
   margin: 40px auto;
 }
 
-. .game-frame {
-  width: 90%;
-
-  height: 600px;
-
+.game-frame {
+  width: 80%;
+  height: 500px;
   border: 5px solid #444;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.game-frame iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
   border-radius: 10px;
 }
+
 
 .controls {
 
@@ -468,36 +461,7 @@ body {
     margin: 10px 0;
   }
 
-  .game-frame {
-    width: 95%;
-    height: 500px;
-  }
 
-  .controls {
-    text-align: center;
-    width: 80%;
-  }
-
-  .controls ul li {
-    font-size: 16px;
-    padding: 10px;
-    /* Corrigido */
-  }
-
-  .team-member {
-    padding-bottom: 100px;
-  }
-
-  .carousel {
-    padding: 100px;
-    /* Corrigido */
-  }
-}
-
-
-.game-frame {
-  width: 90%;
-  height: 600px;
 }
 
 
