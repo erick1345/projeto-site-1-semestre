@@ -465,7 +465,8 @@
     }
   
     .controls {
-      width: 95%;
+      text-align: center;
+      width: 80%;
     }
     .controls ul li {
         font-size: 16px;
