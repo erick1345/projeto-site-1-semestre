@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberCore</title> 
+  <title>CyberCore</title>
   <link href="images/wall-e-unscreen.gif" rel="shortcut icon" />
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -22,26 +22,24 @@
       </div>
       <button class="hamburger" onclick="toggleMenu()">☰</button>
       <nav class="menu">
-       <ul>
-         <li><a href="index.html" title="Home">Home</a></li>
-         <li><a href="#gallery" title="Galeria">Galeria</a></li>
-         <li><a href="quemSomos.html" title="Quem sou?">Quem sou?</a></li>
-         <li><a href="historia.html" title="História">História</a></li>
-         <li>
-          <a href="jogueagora.html" title="Jogue Agora" class="efeito"
-            >Jogue Agora</a
-          >
-        </li>
-         <li>
-           <a href="contato.html" title="Contato" class="btn">Contato</a>
-         </li>
-       </ul>
-       <script>
-       
-        function toggleMenu() {
-          const menu = document.querySelector('.menu');
-          menu.classList.toggle('active');
-        }
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="#gallery" title="Galeria">Galeria</a></li>
+          <li><a href="quemSomos.html" title="Quem sou?">Quem sou?</a></li>
+          <li><a href="historia.html" title="História">História</a></li>
+          <li>
+            <a href="jogueagora.html" title="Jogue Agora" class="efeito">Jogue Agora</a>
+          </li>
+          <li>
+            <a href="contato.html" title="Contato" class="btn">Contato</a>
+          </li>
+        </ul>
+        <script>
+
+          function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+          }
         </script>
       </nav>
     </nav>
@@ -128,6 +126,8 @@
       <div class="botao-centralizado">
         <a href="jogueagora.html" class="btn-cyber">Jogue Agora</a>
       </div>
+
+      <iframe class="game-frame" src="game/index.html" frameborder="0" width="90%" height="600"></iframe>
     </section>
   </main>
   <footer class="footer">
@@ -137,7 +137,7 @@
         <a href="https://www.facebook.com/erick.cordeirojala.9"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/999floco._/"><i class="fab fa-instagram"></i></a>
         <a href="https://x.com/ErickcJala"><i class="fab fa-x-twitter"></i></a>
-    </div>
+      </div>
     </div>
   </footer>
 </body>
