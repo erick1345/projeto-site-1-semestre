@@ -360,29 +360,31 @@
     border-radius: 10px;
   }
   
-  /* Controles do jogo */
+
   .controls {
+    
     width: 80%;
-    margin-top: 20px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #333;
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin-left: 80px;
+   
   }
   
   .controls h2 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .controls ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
   }
   
   .controls ul li {
+    
     font-size: 18px;
     padding: 10px;
     border-bottom: 1px solid #555;
