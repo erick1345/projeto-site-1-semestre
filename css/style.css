@@ -173,7 +173,7 @@
         .col {
           width: 100%;
           box-shadow: 0 0 25px white;
-          margin: 10px;
+          margin: 5px;
           border-radius: 10px;
           padding: 20px;
           text-align: center;
@@ -391,15 +391,66 @@
   .controls ul li:last-child {
     border-bottom: none;
   }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    z-index: 1001;
+  }
   
- @media (max-width: 1020px) {
-.menu {
-  display: none;
+  .menu {
+    display: flex;
+   
+  }
+  @media (max-width: 1020px) {
+    .hamburger {
+      display: block;
+    }
+    .menu {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu ul {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu ul li {
+      margin: 10px 0;
+    }
 
+ 
+  }
+ 
 
-}
-
- }
     
 
 
@@ -413,11 +464,10 @@
   
     .controls {
       width: 95%;
-      
     }
     .controls ul li {
         font-size: 16px;
-       
+        padding: ce;
       }
 
       .team-member {

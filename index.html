@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberCore</title>
+  <title>CyberCore</title> 
   <link href="images/wall-e-unscreen.gif" rel="shortcut icon" />
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -20,6 +20,7 @@
         </a>
         <p>CyberCore</p>
       </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
       <nav class="menu">
        <ul>
          <li><a href="index.html" title="Home">Home</a></li>
@@ -35,6 +36,13 @@
            <a href="contato.html" title="Contato" class="btn">Contato</a>
          </li>
        </ul>
+       <script>
+        // filepath: e:\projeto-site-1-semestre\index.html
+        function toggleMenu() {
+          const menu = document.querySelector('.menu');
+          menu.classList.toggle('active');
+        }
+        </script>
       </nav>
     </nav>
   </header>
@@ -49,7 +57,7 @@
           </p>
         </div>
         <div class="coluna">
-          <img src="images/wall-e-unscreen.gif" alt="Warrior" />
+          <!-- <img src="images/wall-e-unscreen.gif" alt="Warrior" /> -->
         </div>
       </div>
     </section>
@@ -63,7 +71,7 @@
           <img src="images/robo boss.gif" alt="Boss" />
         </div>
         <div class="col">
-          <h3></h3>
+          <h3> R-01</h3>
           <img src="images/Idle (1).png" alt="Boss" />
         </div>
         <div class="col">
